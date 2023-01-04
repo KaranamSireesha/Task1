@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *::before, *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: #393939;
+        }
+
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            /* padding: 100px; */
+            background: lightblue;
+            position: relative;
+        }
+
+        .parent{
+            height: 350px;
+            background: lightcoral;
+            position: relative;
+        }
+
+        .child{
+            width: 100px;
+            height: 100px;
+            background: white;
+            position: absolute;
+            bottom: 50%;
+            right: 50%;
+            transform: translate(50%,50%);
+        }
+
+        .box{
+            height: 300px;
+        }
+
+        .chat{
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            bottom: 20px;
+            left: 30px;
+        }
+
+        .chat:hover img{
+            display: inline-block;
+        }
+
+        .chat img{
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            display: none;
+        }
+
+        .header{
+            height: 150px;
+            background: orangered;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        .box{
+            background: darkolivegreen;
+
+        }
+        .box:nth-child(even){
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div style="height: 100px; background: lightgreen;"></div>
+
+        <div class="header">
+            <h1>Sticky header</h1>
+        </div>
+        <div class="parent">
+            <div class="child">
+    
+            </div>
+    
+        </div>
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    
+
+    <div class="chat">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgfqsIVvEgPtj1Fjtf19AOfQEo6p87Lb98kxABw9mU&s" alt="">
+    </div>
+        
+    </div>
+    
+</body>
+</html>
